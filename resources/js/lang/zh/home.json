@@ -1,0 +1,11 @@
+{
+  "title": "Welcome to react using react-i18next",
+  "moment" : {
+    "year": "年",
+    "month": "月",
+    "second": "杪",
+    "day": "日"
+  },
+
+  "EndOfFile": "EndOfFile"
+}

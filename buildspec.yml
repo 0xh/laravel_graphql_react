@@ -1,0 +1,51 @@
+version: 0.2
+
+#env:
+  #variables:
+     # key: "value"
+     # key: "value"
+  #parameter-store:
+     # key: "value"
+     # key: "value"
+
+phases:
+  #install:
+    #commands:
+      # - command
+      # - command
+  #pre_build:
+    #commands:
+      # - command
+      # - command
+  build:
+    commands:
+        - add-apt-repository ppa:ondrej/php
+        - apt-get update
+        - apt-get -y --force-yes install php7.2
+        - apt-get -y --force-yes install php-pear php7.2-curl php7.2-dev php7.2-gd php7.2-mbstring php7.2-zip php7.2-mysql php7.2-xml
+        - curl -sS https://getcomposer.org/installer -o composer-setup.php
+        - php composer-setup.php --install-dir=/usr/local/bin --filename=composer
+        - composer install && npm install && npm run prod
+        - cp .env.aws .env
+        - php artisan migrate --force
+        - php artisan key:generate
+        - php artisan passport:install
+
+  post_build:
+    commands:
+        - rm -rf node_modules
+        - rm -rf database
+        - rm -rf resources
+        - rm -rf tests
+        - rm -rf .git
+        - ls -lah
+artifacts:
+  files:
+     - '**/*'
+    # - location
+  #name: $(date +%Y-%m-%d)
+  #discard-paths: yes
+  #base-directory: location
+#cache:
+  #paths:
+    # - paths

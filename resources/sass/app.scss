@@ -1,0 +1,72 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+@import "~font-awesome/scss/font-awesome.scss";
+
+// Variables
+@import 'nprogress';
+
+@import '~react-toastify/dist/ReactToastify.min.css';
+
+@import "~react-alice-carousel/src/alice-carousel.scss";
+
+@import '~react-perfect-scrollbar/dist/css/styles.css';
+
+@each $space in 10,20,30,40,50,60,70,80,90,100 {
+  .mvh-#{$space} {
+    min-height: #{$space}vh !important;
+  }
+
+  .vh-#{$space} {
+    height: #{$space}vh !important;
+  }
+
+  .vw-#{$space} {
+    width: #{$space}vw !important;
+  }
+}
+
+.mt-6 {
+  margin-top: 4rem;
+}
+
+.pointer {
+  cursor: pointer
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.tloader-msg:after{
+  .state-pulling &{
+    content: '' !important; //@pullingMsg
+  }
+
+  .state-pulling.enough &{
+    content: '' !important; //@pullingEnoughMsg;
+  }
+
+  .state-refreshed &{
+    content: '' !important; //@refreshedMsg;
+  }
+}
+.tloader-loading:after{
+  content: '' !important; //@loadingMsg;
+
+  .tloader-symbol &{
+    content: '' !important; //@refreshingMsg;
+  }
+}
+.tloader-btn:after{
+  content: '' !important; //@btnLoadMore;
+}
+
+

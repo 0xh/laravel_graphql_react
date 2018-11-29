@@ -1,0 +1,15 @@
+{
+  "": "",
+  "example": "example",
+  "home": "home",
+  "logout": "logout",
+  "moment" : {
+    "year": "year",
+    "month": "month",
+    "second": "second",
+    "day": "day"
+  },
+
+
+  "EndOfFile": "EndOfFile"
+}
