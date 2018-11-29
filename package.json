@@ -40,7 +40,6 @@
         "less": "^3.8.1",
         "moment-timezone": "^0.5.23",
         "nprogress": "^0.2.0",
-        "prerender": "^5.4.4",
         "pusher-js": "^4.3.1",
         "react": "^16.7.0-alpha.2",
         "react-apollo": "^2.3.1",
@@ -64,7 +63,6 @@
         "react-touch-loader": "^1.1.4",
         "react-transition-group": "^2.5.0",
         "react-truncate": "^2.4.0",
-        "reactstrap": "^6.5.0",
-        "relay-runtime": "^1.7.0"
+        "reactstrap": "^6.5.0"
     }
 }
