@@ -8,7 +8,7 @@ docker-compose exec workspace bash
 composer install
 npm install
 php artisan key:generate
-####### I AM COMMENT ����ע�� you should have already create an mysql user and create anokuma database before execute below script #########
+####### I AM COMMENT ����ע�� you should have already create an mysql user and create database before execute below script #########
 php artisan storage:link
 php artisan migrate
 php artisan passport:install

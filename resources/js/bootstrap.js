@@ -55,7 +55,7 @@ let echoConfig = {
     broadcaster: 'pusher',
     cluster: 'ap1'
     // broadcaster: 'socket.io',
-    // host: 'anokuma.local:6001',
+    // host: 'example.local:6001',
 };
 
 let hostname = window.location.hostname;
